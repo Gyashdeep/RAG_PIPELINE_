@@ -81,7 +81,7 @@ st.header(">> ANALYSIS_CONSOLE")
 query = st.text_input("EXECUTE QUERY:")
 
 if query and st.session_state.retriever and api_key:
-    llm = ChatGroq(groq_api_key=api_key, model_name="llama-3.3-70b-versatile")
+    llm = ChatGroq(groq_api_key=api_key, model_name="openai/gpt-oss-120b")
     prompt = ChatPromptTemplate.from_template("""
     You are an elite expert analyst. Answer the user question based strictly on the retrieved context.
     <context>
