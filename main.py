@@ -11,8 +11,8 @@ from langchain_classic.chains.retrieval import create_retrieval_chain
 from langchain_classic.chains.combine_documents import create_stuff_documents_chain
 
 # --- UI CONFIGURATION ---
-st.set_page_config(page_title="GoldRush RAG", layout="wide")
-st.title("🏆 Extreme GoldRush RAG Engine")
+st.set_page_config(page_title="RAG ENGINE", layout="wide")
+st.title("🏆 RAG ENGINE")
 
 # --- INITIALIZATION ---
 if "retriever" not in st.session_state:
@@ -42,7 +42,7 @@ with st.sidebar:
 # --- MAIN: GOLD RUSH GENERATION ---
 query = st.text_input("Execute Query:")
 if query and st.session_state.retriever and api_key:
-    llm = ChatGroq(groq_api_key=api_key, model_name="llama3-70b-8192")
+    llm = ChatGroq(groq_api_key=api_key, model_name="kimi-k2")
     
     # Classic Chain Pattern for Maximum Stability
     prompt = ChatPromptTemplate.from_template("""
