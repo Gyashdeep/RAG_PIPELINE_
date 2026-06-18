@@ -13,8 +13,8 @@ from langchain_classic.chains.retrieval import create_retrieval_chain
 from langchain_classic.chains.combine_documents import create_stuff_documents_chain
 
 # --- CONFIGURATION ---
-st.set_page_config(page_title="GoldRush RAG", layout="wide")
-st.title("🏆 Extreme GoldRush RAG Engine")
+st.set_page_config(page_title="RAG ENGINE" , layout="wide")
+st.title("🏆 RAG ENGINE")
 
 # --- INITIALIZATION ---
 if "retriever" not in st.session_state:
