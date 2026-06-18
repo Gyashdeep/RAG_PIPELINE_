@@ -1,18 +1,8 @@
-# Orchestration & Integration
-langchain
-langchain-community
-langchain-groq
-langchain-huggingface
-
-# Vector Database & Retrieval
-faiss-cpu
-sentence-transformers
-
-# PDF Parsing
-pypdf
-
-# Web Interface
 streamlit
-
-# Environment Management
-python-dotenv
+langchain-classic
+langchain-community
+langchain-huggingface
+langchain-groq
+faiss-cpu
+pypdf
+sentence-transformers
