@@ -57,7 +57,7 @@ query = st.text_input("Execute query:")
 
 if query and st.session_state.retriever and api_key:
     # High-Performance LLM from Groq
-    llm = ChatGroq(groq_api_key=api_key , model_name="gemma2-9b-it")
+    llm = ChatGroq(groq_api_key=api_key , model_name="llama-3.3-70b-versatile")
     
     # Classic Chain Pattern
     prompt = ChatPromptTemplate.from_template("""
