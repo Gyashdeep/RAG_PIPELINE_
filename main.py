@@ -46,7 +46,7 @@ st.title("🏆 RAG ENGINE")
 col1, col2, col3 = st.columns(3)
 col1.markdown('<div class="metric-box">LATENCY: <50ms (LPU)</div>', unsafe_allow_html=True)
 col2.markdown('<div class="metric-box">INDEX: FAISS-QUANTIZED</div>', unsafe_allow_html=True)
-col3.markdown('<div class="metric-box">CORE: LLAMA-3.3-70B</div>', unsafe_allow_html=True)
+col3.markdown('<div class="metric-box">CORE: OPENAI/GPT-OSS-120DB</div>', unsafe_allow_html=True)
 
 # --- INITIALIZATION ---
 if "retriever" not in st.session_state:
